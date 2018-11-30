@@ -1,0 +1,15 @@
+This one'll be in two parts.
+
+First, my experiences with the debugger (lldb). Put bluntly, terrible. For some reason it showed me my code in the assembly version, which was nigh unreadable.
+It also wasn't very helpful about fixing runtime errors, as the only thing it showed me was which line it was on. Also, it didn't work at all for the .cc file
+and only did anything with the compiled version (which on further reflection may explain the whole assembly thing). Not great to work with, but I have a 
+suspicion that I was just using the tool wrong.
+
+Second, I want to address the makefile that I used. It's busted. I couldn't get the generalizations to work, despite explaining my code to a classmate to hear
+"Sounds like the same as mine". As such, it doesn't make a source-stats.wc from source.txt (unless I specify those files). It also doesn't compile the
+highest.cc file for a different reason, being that it gets a compile error that I couldn't figure out how to fix. However, the program does compile into a
+running program using the following settings:
+g++ -std=c++0x  -Wall -Wextra -pedantic -o testfile highest.cc
+I don't know how they differ. Make clean does work, though, if the executable exists.
+
+In summary, lots of technical bugs, but I think the underlying code is solid.

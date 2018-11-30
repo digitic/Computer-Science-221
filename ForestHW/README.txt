@@ -1,0 +1,3 @@
+A lot of my design decisions were based around making the required functions easier to code. This led to a few helper functions and variables. However, I coded those as I needed them, which meant I started from HTree's constuctor, then its functions, and helper functions and other variables as needed for testing. After I verified that HTree was working as planned, I did the same for HForest. However, I never did figure out how to link files and just ended up including things up a chain.
+
+Just use the included makefile to compile!
